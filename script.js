@@ -1,7 +1,7 @@
 const categories = ['Zapatos', 'Ropa', 'Cosméticos', 'Juguetes', 'Electrodomésticos', 'Audífonos y electrónicos', 'Accesorios', 'Hogar', 'Otros'];
 
 const products = [
-  { id: 1, name: 'Zapato (tenis)', category: 'Zapatos', price: 120000, status: 'En tránsito', description: 'Diseño ligero y cómodo para uso diario.', image: '👟' },
+  { id: 1, name: 'Tenis', category: 'Zapatos', price: 120000, status: 'En tránsito', description: 'Diseño ligero y cómodo para uso diario.', image: '👟' },
   { id: 2, name: 'Abrigo', category: 'Ropa', price: 98000, status: 'Pendiente', description: 'Ideal para clima templado y estilo moderno.', image: '🧥' },
   { id: 3, name: 'Set skincare', category: 'Cosméticos', price: 76000, status: 'Confirmado', description: 'Rutina de cuidado con formulación suave.', image: '🧴' },
   { id: 4, name: 'Juguetes', category: 'Juguetes', price: 160000, status: 'Entregado', description: 'Juego interactivo para aprender jugando.', image: '🤖' },
