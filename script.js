@@ -1,4 +1,4 @@
-const categories = ['Zapatos', 'Ropa', 'Cosméticos', 'Juguetes', 'Electrodomésticos', 'Audífonos y electrónicos', 'Accesorios', 'Hogar', 'Otros'];
+const categories = ['Zapatos', 'Ropa', 'Cosméticos', 'Juguetes', 'Electrodomésticos', 'Audífonos y electrónicos', 'Accesorios'];
 
 const products = [
   { id: 1, name: 'Tenis', category: 'Zapatos', price: 120000, status: 'En tránsito', description: 'Diseño ligero y cómodo para uso diario.', image: '👟' },
@@ -8,9 +8,7 @@ const products = [
   { id: 5, name: 'Licuadora', category: 'Electrodomésticos', price: 240000, status: 'Pendiente', description: 'Potente y fácil de limpiar para cocina diaria.', image: '🥤' },
   { id: 6, name: 'Audífonos Bluetooth', category: 'Audífonos y electrónicos', price: 190000, status: 'En tránsito', description: 'Sonido envolvente con batería de larga duración.', image: '🎧' },
   { id: 7, name: 'Cartera y bolsos', category: 'Accesorios', price: 89000, status: 'Confirmado', description: 'Estilo elegante y espacio práctico.', image: '👜' },
-  { id: 8, name: 'Set de cocina', category: 'Hogar', price: 135000, status: 'Entregado', description: 'Accesorios funcionales para la mesa y cocina.', image: '🍽️' },
-  { id: 9, name: 'Kit de oficina', category: 'Otros', price: 95000, status: 'En tránsito', description: 'Suministros premium para equipos de trabajo.', image: '📚' },
-];
+
 
 const sampleOrders = [
   {
@@ -32,7 +30,7 @@ const sampleOrders = [
     price: 320000,
     comments: 'Confirmado por USA, entrega en Costa Rica.',
     items: [
-      { name: 'Zapatilla urbana', category: 'Zapatos', size: '40', color: 'Blanco', brand: 'Nike', quantity: 1 },
+      { name: 'Tenis', category: 'Zapatos', size: '40', color: 'Blanco', brand: 'Nike', quantity: 1 },
       { name: 'Robot educativo', category: 'Juguetes', size: 'Único', color: 'Azul', brand: 'LEGO', quantity: 1 }
     ]
   }
