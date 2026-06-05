@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Cliente | BlueLine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark" aria-label="Logo Victor">V</div>
+        <div>
+          <p class="eyebrow">CV Personal Shopper</p>
+          <h1>CV Personal Shopper</h1>
+          <p class="subtitle">Disfruta los mejores precios en USA</p>
+        </div>
+      </div>
+      <nav class="top-actions">
+        <a class="ghost-btn" href="admin.html">Ir a panel administrativo</a>
+      </nav>
+    </header>
+
+    <main class="layout-grid">
+      <section class="panel panel-wide">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Catálogo</p>
+            <h2>Productos disponibles</h2>
+          </div>
+          <span class="badge">Precio se confirmará en USA</span>
+        </div>
+
+        <div id="catalog-grid" class="card-grid"></div>
+      </section>
+
+      <aside class="panel sticky-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Pedido</p>
+            <h2>Resumen del cliente</h2>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <p>Estado inicial</p>
+          <strong>Pendiente de compra</strong>
+        </div>
+
+        <div id="selected-list" class="selected-list"></div>
+
+        <div class="summary-card">
+          <p>Total de ítems</p>
+          <strong id="item-count">0</strong>
+        </div>
+
+        <div class="preorder-form">
+          <label class="field-label" for="customer-name">Nombre del cliente</label>
+          <input id="customer-name" class="text-input" type="text" placeholder="Ej. Daniel Córdoba" />
+          <label class="field-label" for="product-select">Producto</label>
+          <select id="product-select" class="status-select"></select>
+          <label class="field-label" for="size-input">Talla</label>
+          <input id="size-input" class="text-input" type="text" placeholder="Ej. M, L, Único" />
+          <label class="field-label" for="color-input">Color</label>
+          <input id="color-input" class="text-input" type="text" placeholder="Ej. Azul, Negro" />
+          <label class="field-label" for="brand-input">Marca</label>
+          <input id="brand-input" class="text-input" type="text" placeholder="Ej. Nike, Adidas" />
+          <label class="field-label" for="quantity-input">Cantidad</label>
+          <input id="quantity-input" class="text-input" type="number" min="1" value="1" />
+          <label class="field-label" for="order-details">Comentarios opcionales</label>
+          <textarea id="order-details" class="text-input text-area" rows="3" placeholder="Ej. Entregar en San José, color azul"></textarea>
+        </div>
+
+        <button id="confirm-order" class="primary-btn" type="button">Registrar pre-orden</button>
+        <p class="small-note">Precio se confirmará al momento de compra en USA.</p>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

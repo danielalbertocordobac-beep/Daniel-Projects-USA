@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel Administrativo | BlueLine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark" aria-label="Logo Victor">V</div>
+        <div>
+          <p class="eyebrow">Cordoba Villalobos Personal Shopper</p>
+          <h1>Cordoba Villalobos Personal Shopper</h1>
+          <p class="subtitle">Gestión interna de órdenes, precios y entregas.</p>
+        </div>
+      </div>
+      <nav class="top-actions">
+        <a class="ghost-btn" href="index.html">Ver catálogo cliente</a>
+      </nav>
+    </header>
+
+    <main class="layout-grid admin-layout">
+      <section class="panel panel-wide">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Órdenes</p>
+            <h2>Órdenes agrupadas por cliente</h2>
+          </div>
+          <span class="badge badge-success">Actualización en tiempo real</span>
+        </div>
+        <div id="orders-grid" class="orders-grid"></div>
+      </section>
+
+      <aside class="panel sticky-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Estado</p>
+            <h2>Estado operativo</h2>
+          </div>
+        </div>
+
+        <div id="status-grid" class="status-grid"></div>
+
+        <div class="summary-card">
+          <p>Entregas confirmadas</p>
+          <strong id="confirmed-deliveries">0</strong>
+        </div>
+        <div class="summary-card">
+          <p>Última actualización</p>
+          <strong id="last-update">—</strong>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
